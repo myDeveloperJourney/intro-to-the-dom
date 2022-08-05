@@ -5,6 +5,15 @@
     named h1Element then console.log the variable
 */
 
-const h1Element = document.getElementById('title');
-console.log(h1Element);
-h1Element.style.color = 'red';
+// select an element using getElementById
+// const h1Element = document.getElementById('title');
+// h1Element.style.color = 'red';
+
+// select an element using querySelector
+// works like a css selector
+const h1Element = document.querySelector('.main-title-large');
+
+// console.log(h1Element);
+
+const pEl = document.querySelector('.cool');
+console.log(pEl);
