@@ -52,3 +52,20 @@ pEl.setAttribute('class', 'red bold important large-text');
 
 pEl.classList.remove('red');
 pEl.classList.add('special');
+
+// How to select multiple DOM elements using querySelectorAll()
+
+const liEls = document.querySelectorAll('.comment');
+
+// because liEls is a list, we can iterate over the list as we normally loop over arrays (lists)
+// for(let i = 0; i < liEls.length; i++) {
+//     console.log(liEls[i]);
+// }
+
+// we can also use the .forEach method
+
+document.querySelector('ol').style.listStyleType = 'upper-roman'
+
+liEls.forEach(function(li) {
+    li.style.color = 'dodgerblue';
+});
