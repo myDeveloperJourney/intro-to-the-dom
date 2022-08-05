@@ -31,5 +31,24 @@ pEl.innerHTML = "Comments for <strong>today</strong>";
 // Changing css styles of an element using JavaScript
 
 h1Element.style.color = 'red';
-h1Element.style.fontFamily = 'Helvetica';
-h1Element.style.textAlign = 'center';
+h1Element.style.fontFamily = 'Helvetica'; // font-family
+h1Element.style.textAlign = 'center'; // text-align
+pEl.style.color = 'rebeccapurple';
+
+// working with HTML attributes and the DOM
+
+// console.log(pEl.hasAttribute('class')); // => should return true
+
+pEl.setAttribute('id', 'not-cool'); // sets the value of a given attribute
+
+console.log(h1Element.getAttribute('id')); // => should return "title"
+
+const aEl = document.querySelector('a');
+
+aEl.setAttribute('href', 'https://google.com');
+aEl.setAttribute('target', '_blank');
+
+pEl.setAttribute('class', 'red bold important large-text');
+
+pEl.classList.remove('red');
+pEl.classList.add('special');
